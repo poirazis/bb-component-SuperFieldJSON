@@ -48,7 +48,7 @@
 
   $: formStep = formStepContext ? $formStepContext || 1 : 1;
   $: labelPos =
-    groupLabelPosition && labelPosition == "fieldGroup"
+    groupLabelPosition !== undefined && labelPosition == "fieldGroup"
       ? groupLabelPosition
       : labelPosition;
 
@@ -77,7 +77,7 @@
     disabled: disabled || groupDisabled || fieldState?.disabled,
     template,
     readonly: readonly || fieldState?.readonly,
-    icon,
+    icon: icon ? "ph ph-" + icon : undefined,
     debounce: debounced ? debounceDelay : false,
     align,
     error: fieldState?.error,
