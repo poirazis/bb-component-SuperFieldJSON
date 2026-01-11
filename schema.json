@@ -1,6 +1,8 @@
 {
   "type": "component",
-  "metadata": {},
+  "metadata": {
+    "svelteMajor": 5
+  },
   "schema": {
     "name": "bb-component-SuperFieldJSON",
     "friendlyName": "Super Field - JSON",
@@ -102,7 +104,10 @@
         "type": "phosphorIcon",
         "key": "icon",
         "label": "Inline Icon",
-        "dependsOn": { "setting": "controlType", "value": "singleLine" }
+        "dependsOn": {
+          "setting": "controlType",
+          "value": "singleLine"
+        }
       },
       {
         "tag": "style",
